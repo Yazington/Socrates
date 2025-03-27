@@ -1,0 +1,16 @@
+{
+    "extends": "./tsconfig.node.json",
+    "compilerOptions": {
+        // Make sure we actually emit compiled JS
+        "noEmit": false,
+        "outDir": "out",
+        // For typical extension code, Node-style resolution is simpler:
+        "moduleResolution": "node",
+        // Disable or override allowImportingTsExtensions
+        "allowImportingTsExtensions": false,
+        "module": "commonjs",
+    },
+    "include": [
+        "src/extension.ts"
+    ]
+}
